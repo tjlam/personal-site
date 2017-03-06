@@ -16,3 +16,12 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+#jumbotron {
+	height: 80%;
+	background-color: #191917;
+
+}
+#name {
+	z-index: 100;
+}
