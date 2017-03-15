@@ -16,7 +16,7 @@ class PagesController < ApplicationController
 	    	redirect_to pages_path
 	    else
 	    	flash[:danger] = 'Error occured, message has not been sent.'
-	      	redirect_to pages_path, notice: "Error occured"
+	      	redirect_to pages_path
   		end
 	end
 
