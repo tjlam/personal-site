@@ -14,9 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-<<<<<<< HEAD
-//= require snapsvg
-=======
->>>>>>> contact_form
 //= require_tree .
 
