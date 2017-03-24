@@ -1,0 +1,10 @@
+branch-defaults:
+  master:
+    environment: ruby-env
+global:
+  application_name: tylerlam
+  default_ec2_keyname: null
+  default_platform: Ruby 2.3 (Puma)
+  default_region: us-west-2
+  profile: eb-cli
+  sc: git
