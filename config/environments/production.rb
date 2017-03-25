@@ -56,7 +56,10 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "personal_site_#{Rails.env}"
   config.action_mailer.perform_caching = false
-
+  # action mailer perform delivery
+  config.action_mailer.perform_deliveries = true 
+  # Don't care if the mailer can't send.
+  config.action_mailer.raise_delivery_errors = true
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
@@ -83,4 +86,13 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.smtp_settings = {
+    :address => "email-smtp.us-west-2.amazonaws.com",
+    :port => 587,
+    :user_name => ENV["SES_SMTP_USERNAME"], 
+    :password => ENV["SES_SMTP_PASSWORD"], 
+    :authentication => :login,
+    :enable_starttls_auto => true
+  }
 end
