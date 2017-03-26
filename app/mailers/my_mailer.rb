@@ -1,8 +1,8 @@
 class MyMailer < ApplicationMailer
-	def send_email(options={})
-		@name = options[:name]
-		@email = options[:email]
-		@message = options[:message]
+	def send_email(name, email, message)
+		@name = name
+		@email = email
+		@message = message
 		mail(:to=>"tylerlam888@gmail.com", :subject=>"Amazon SES Email")
 	end
 end
