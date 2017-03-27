@@ -50,15 +50,28 @@ input:-moz-placeholder {
 }
 
 /*element styling*/
-.jumbotron {
-	background-color: #191917;
+.jumbotron{
 	height: 80vh;
+	background-color: #191917;
+	z-index: -1;
+}
+#particles-js {
+	background-color: #191917;
+}
+canvas{
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 80vh !important;
+	z-index: 0;
 }
 .row {
 	padding-left: 30px;
 }
 .jumbotron .row {
 	padding-top: 150px;
+	z-index: 1000;
 }
 #header-text {
 	color: #FFFFFF;
@@ -95,4 +108,5 @@ input:-moz-placeholder {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: lighter;
 }
+
 
