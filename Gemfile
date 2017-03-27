@@ -15,8 +15,6 @@ gem 'rails', '~> 5.0.1'
 gem 'sqlite3'
 # Use Passenger as the app server 
 gem 'passenger'
-# particle.js gem 
-# gem 'rails-assets-particles.js'
 # Use Puma as the app server
 # gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -42,6 +40,10 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# particle js gem
+source 'https://rails-assets.org' do
+  gem 'rails-assets-particles.js'
+end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
