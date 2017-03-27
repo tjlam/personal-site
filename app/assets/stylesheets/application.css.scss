@@ -16,3 +16,83 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Doppio+One|Source+Code+Pro:300,400');
+
+/*font styling*/
+.header {
+	font-family: 'Doppio One', sans-serif;
+}
+p, a {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: lighter;
+}
+.form-control::-webkit-input-placeholder { 
+	font-family: 'Source Code Pro', monospace;
+	font-weight: lighter;
+}
+/* firefox 19+ */
+.form-control::-moz-placeholder { 
+	font-family: 'Source Code Pro', monospace;
+	font-weight: lighter;
+} 
+/* ie */
+.form-control:-ms-input-placeholder { 
+	font-family: 'Source Code Pro', monospace;
+	font-weight: lighter;
+} 
+input:-moz-placeholder { 
+	font-family: 'Source Code Pro', monospace;
+	font-weight: lighter;
+}
+.form-control input {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: lighter;
+}
+
+/*element styling*/
+.jumbotron {
+	background-color: #191917;
+	height: 80vh;
+}
+.row {
+	padding-left: 30px;
+}
+.jumbotron .row {
+	padding-top: 150px;
+}
+#header-text {
+	color: #FFFFFF;
+}
+#my-name {
+	padding-bottom: 25px;
+}
+#contact-form {
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+}
+#contact-header h2{
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.form-control {
+	border-radius: 0px; 
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	box-shadow: none;
+}
+.form-control:focus {
+	outline: none !important;
+	box-shadow: none;
+	border-width: 2px;
+	
+}
+#submit-btn {
+	border-radius: 0px;
+	border-color: #191917;
+	font-family: 'Source Code Pro', monospace;
+	font-weight: lighter;
+}
+

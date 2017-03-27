@@ -12,7 +12,18 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require snapsvg
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
 
+$(document).ready(function () {
+	var line1 = Snap.select('#line1');
+	line1.select('#P1').animate({d: "M80,227 L182.5,227"}, 1500, mina.easeinout);
+	console.log('hello world');
+
+	var line2 = Snap.select('#line2');
+	line2.select('#P2').animate({d: "M80,886 L182.5,886"}, 1500, mina.easeinout);
+
+
+});
