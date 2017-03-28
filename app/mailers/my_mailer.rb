@@ -1,8 +1,8 @@
 class MyMailer < ApplicationMailer
-	def send_email(name, email, message)
+	def send_email(name, email, comments)
 		@name = name
 		@email = email
-		@message = message
+		@comments = comments
 		mail(:to=>"tylerlam888@gmail.com", :subject=>"Amazon SES Email")
 	end
 end
