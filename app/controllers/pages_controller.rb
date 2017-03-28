@@ -9,9 +9,9 @@ class PagesController < ApplicationController
 		if @contact.save 
 			name = params[:contact][:name]
 			email = params[:contact][:email]
-			message = params[:contact][:message]
+			comments = params[:contact][:comments]
 
-			MyMailer.send_email(name, email, message).deliver 
+			MyMailer.send_email(name, email, comments).deliver 
 			flash[:success] = "Message sent!"
 			redirect_to root_url
 		else 
@@ -22,6 +22,6 @@ class PagesController < ApplicationController
 
 	private 
 		def contact_params 
-			params.require(:contact).permit(:name, :email, :message)
+			params.require(:contact).permit(:name, :email, :comments)
 		end
 end
