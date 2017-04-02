@@ -103,15 +103,16 @@ canvas{
 .form-control {
 	border-radius: 0px; 
 	box-shadow: none;
+	font-family: 'Source Code Pro', monospace;
+	font-weight: lighter;
 }
 
 .form-control:focus {
 	outline: none !important;
 	box-shadow: none;
-	border-width: 2px;
-	font-family: 'Source Code Pro', monospace;
-	font-weight: lighter;
-	border-color: #00FF00;
+	border-width: 1px;
+
+	border-color: #191917;
 }
 #submit-btn {
 	border-radius: 0px;
