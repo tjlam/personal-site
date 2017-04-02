@@ -48,15 +48,23 @@ input:-moz-placeholder {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: lighter;
 }
+a {
+	color: #00ff00;
+}
+
+a:hover {
+	color: #00ff00;
+}
 
 /*element styling*/
 .jumbotron{
 	height: 80vh;
-	background-color: #191917;
+	background: transparent;
+	margin-bottom:  0px;
 	z-index: -1;
 }
 #particles-js {
-	background-color: #191917;
+	background: transparent;
 }
 canvas{
 	display: block;
@@ -64,7 +72,8 @@ canvas{
 	top: 0px;
 	left: 0px;
 	height: 80vh !important;
-	z-index: 0;
+	z-index: -1;
+	background-color: #191917;
 }
 .row {
 	padding-left: 30px;
@@ -80,10 +89,12 @@ canvas{
 	padding-bottom: 25px;
 }
 #contact-form {
+	background-color: #FFFFFF;
 	position: relative;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 50px;
+	padding-top: 15px;
 }
 #contact-header h2{
 	margin-top: 15px;
@@ -91,16 +102,16 @@ canvas{
 }
 .form-control {
 	border-radius: 0px; 
-	border-top: none;
-	border-right: none;
-	border-left: none;
 	box-shadow: none;
 }
+
 .form-control:focus {
 	outline: none !important;
 	box-shadow: none;
 	border-width: 2px;
-	
+	font-family: 'Source Code Pro', monospace;
+	font-weight: lighter;
+	border-color: #00FF00;
 }
 #submit-btn {
 	border-radius: 0px;

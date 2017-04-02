@@ -40,13 +40,13 @@ $(document).ready(function () {
       "value": "#ffffff"
     },
     "shape": {
-      "type": "circle",
+      "type": "polygon",
       "stroke": {
         "width": 0,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 4
       },
       "image": {
         "src": "img/github.svg",
@@ -103,7 +103,7 @@ $(document).ready(function () {
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -123,7 +123,7 @@ $(document).ready(function () {
         "speed": 3
       },
       "repulse": {
-        "distance": 200
+        "distance": 100
       },
       "push": {
         "particles_nb": 4
