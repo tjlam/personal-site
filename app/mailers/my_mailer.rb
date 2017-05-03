@@ -3,6 +3,6 @@ class MyMailer < ApplicationMailer
 		@name = name
 		@email = email
 		@comments = comments
-		mail(:to=>"tylerlam888@gmail.com", :subject=>"Amazon SES Email")
+		mail(:to=>"tylerlam888@gmail.com", :subject=>"Email from tylerlam.me")
 	end
 end

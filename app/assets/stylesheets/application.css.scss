@@ -26,21 +26,21 @@ p, a {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: lighter;
 }
-.form-control::-webkit-input-placeholder { 
+.form-control::-webkit-input-placeholder {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: lighter;
 }
 /* firefox 19+ */
-.form-control::-moz-placeholder { 
+.form-control::-moz-placeholder {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: lighter;
-} 
+}
 /* ie */
-.form-control:-ms-input-placeholder { 
+.form-control:-ms-input-placeholder {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: lighter;
-} 
-input:-moz-placeholder { 
+}
+input:-moz-placeholder {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: lighter;
 }
@@ -79,7 +79,7 @@ canvas{
 	padding-left: 30px;
 }
 .jumbotron .row {
-	padding-top: 150px;
+	padding-top: 100px;
 	z-index: 1000;
 }
 #header-text {
@@ -94,14 +94,14 @@ canvas{
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 50px;
-	padding-top: 15px;
+	padding-top: 30px;
 }
 #contact-header h2{
 	margin-top: 15px;
 	margin-bottom: 20px;
 }
 .form-control {
-	border-radius: 0px; 
+	border-radius: 0px;
 	box-shadow: none;
 	font-family: 'Source Code Pro', monospace;
 	font-weight: lighter;
@@ -120,5 +120,3 @@ canvas{
 	font-family: 'Source Code Pro', monospace;
 	font-weight: lighter;
 }
-
-

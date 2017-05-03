@@ -26,11 +26,11 @@ $(document).ready(function () {
 	var line2 = Snap.select('#line2');
 	line2.select('#P2').animate({d: "M80,886 L182.5,886"}, 1500, mina.easeinout);
 
-	particlesJS('particles-js',
- {
+	particlesJS(
+		{
   "particles": {
     "number": {
-      "value": 80,
+      "value": 150,
       "density": {
         "enable": true,
         "value_area": 800
@@ -56,16 +56,16 @@ $(document).ready(function () {
     },
     "opacity": {
       "value": 0.5,
-      "random": false,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 1,
-        "opacity_min": 0.1,
+        "opacity_min": 1,
         "sync": false
       }
     },
     "size": {
-      "value": 5,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
@@ -75,7 +75,7 @@ $(document).ready(function () {
       }
     },
     "line_linked": {
-      "enable": true,
+      "enable": false,
       "distance": 150,
       "color": "#ffffff",
       "opacity": 0.4,
@@ -83,11 +83,12 @@ $(document).ready(function () {
     },
     "move": {
       "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
+      "speed": 3,
+      "direction": "top",
+      "random": true,
+      "straight": true,
       "out_mode": "out",
+      "bounce": false,
       "attract": {
         "enable": false,
         "rotateX": 600,
@@ -96,11 +97,11 @@ $(document).ready(function () {
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
-        "enable": true,
-        "mode": "repulse"
+        "enable": false,
+        "mode": "bubble"
       },
       "onclick": {
         "enable": false,
@@ -123,7 +124,8 @@ $(document).ready(function () {
         "speed": 3
       },
       "repulse": {
-        "distance": 100
+        "distance": 200,
+        "duration": 0.4
       },
       "push": {
         "particles_nb": 4
@@ -133,16 +135,8 @@ $(document).ready(function () {
       }
     }
   },
-  "retina_detect": true,
-  "config_demo": {
-    "hide_card": false,
-    "background_color": "#b61924",
-    "background_image": "",
-    "background_position": "50% 50%",
-    "background_repeat": "no-repeat",
-    "background_size": "cover"
-   }
-  }
- );
+  "retina_detect": true
+}
+	)
 
 });
