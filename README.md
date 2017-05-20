@@ -1,24 +1,13 @@
-# README
+# tylerlam.me
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A personal website built with Ruby on Rails and SES for contact form functionality
 
-Things you may want to cover:
+visit http://tylerlam.me/
 
-* Ruby version
+##built with
+* [particle.js](http://vincentgarreau.com/particles.js/) for background animations
+* [snap.svg](http://snapsvg.io/) for svg animations
+* Amazon SES for emailing
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## versioning
+ruby 2.3.0 and rails 5.0.2
