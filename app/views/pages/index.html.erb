@@ -18,12 +18,12 @@
 					</div>
 					<div id="links" class="links">
 						<ul>
-							<a href="https://github.com/tjlam"><li>Github</li></a> 
-							<a href="https://www.linkedin.com/in/tylerlam/"><li>Linkedin</li></a> 
-							<a href=""><li>Resume</li></a> 
-							<a href="https://www.facebook.com/tyler8lam"><li>Facebook</li></a> 
+							<a href="https://github.com/tjlam"><li>Github</li></a>
+							<a href="https://www.linkedin.com/in/tylerlam/"><li>Linkedin</li></a>
+							<li><%=link_to "Resume", asset_path("Tyler_Lam_Resume_Software.pdf")%></li>
+							<a href="https://www.facebook.com/tyler8lam"><li>Facebook</li></a>
 						</ul>
-					</div>	
+					</div>
 				</div>
 			</div>
 		</div>
@@ -44,16 +44,16 @@
 			</div>
 		</div>
 	</div>
-	
 
-	<%= form_for @contact, :url => pages_path do |f| %> 
+
+	<%= form_for @contact, :url => pages_path do |f| %>
 		<div class="row">
 			<div class="form-group col-md-6">
-				<%= f.text_field :name, class: 'form-control', placeholder: 'your name' %> 
+				<%= f.text_field :name, class: 'form-control', placeholder: 'your name' %>
 			</div>
-		
+
 			<div class="form-group col-md-6">
-				<%= f.email_field :email, class: 'form-control', placeholder: 'your email' %> 
+				<%= f.email_field :email, class: 'form-control', placeholder: 'your email' %>
 			</div>
 		</div>
 
@@ -70,4 +70,3 @@
 		</div>
 	<% end %>
 </div>
-
